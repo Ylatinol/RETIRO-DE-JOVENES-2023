@@ -1,0 +1,530 @@
+
+.banner-overlay {
+	background-color: rgba(1, 0, 0, 0.9); /* Color de fondo con transparencia */
+	/* Otros estilos para el banner */
+  }
+
+
+
+/* Estilos para el logo */
+.logo-1 {
+	max-width: 120px; /* Tamaño máximo del logo */
+	width: 60%; /* Para asegurarse de que el logo se ajuste al contenedor */
+	height: auto; /* Para mantener la proporción */
+  }
+  
+
+
+
+  /* Estilos para el contador */
+
+  .countdown {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .countdown h1 {
+	font-size: 4vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+  }
+  
+  .countdown-labels {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+	font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+  }
+  
+  /* Media Queries para diferentes tamaños de pantalla */
+  @media screen and (max-width: 768px) {
+	.countdown h1 {
+	  font-size: 6vw; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+	}
+	
+	.countdown-labels {
+	  width: 80%; /* Ajusta el ancho para pantallas más pequeñas */
+	  font-size: 2.5vw; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+	}
+  }
+
+
+  .countdown {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px; /* Ajusta el margen inferior del contador */
+  }
+  
+  .countdown h1 {
+	font-size: 3rem;
+  }
+  
+  .countdown-labels {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	font-size: 1rem;
+  }
+  
+  /* Agrega estilos para las etiquetas */
+  .countdown-labels span {
+	flex: 1;
+	text-align: center;
+	color: #ede8e8; /* Cambia este color por el que desees como resalte */
+  }
+  
+  /* Media query para ajustar el tamaño en dispositivos más pequeños */
+  @media screen and (max-width: 991px) {
+	.countdown h1 {
+	  font-size: 2rem;
+	}
+	
+	.countdown-labels {
+	  font-size: 0.8rem;
+	}
+  }
+  
+  /* Media query para ajustar el tamaño en dispositivos móviles */
+  @media screen and (max-width: 768px) {
+	.countdown h1 {
+	  font-size: 2rem;
+	}
+	
+	.countdown-labels {
+	  font-size: 0.7rem;
+	}
+  }
+  
+  /* Estilos generales */
+  * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none !important;
+	list-style: none !important;
+	outline: none !important;
+	margin: 0;
+	padding: 0;
+  }
+  
+  html {
+	height: 100%;
+  }
+  
+  body {
+	color: #888888;
+	font-size: 15px;
+	font-family: "Poppins", sans-serif;
+	height: 100%;
+	overflow-x: hidden;
+  }
+  
+  /* Estilos para títulos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	color: #151515;
+	font-weight: 600;
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+  }
+  
+  p {
+	line-height: 1.6;
+	font-weight: 400;
+	margin: 0;
+  }
+  
+  h1 {
+	font-size: 40px;
+  }
+  
+  h2 {
+	font-size: 35px;
+  }
+  
+  h3 {
+	font-size: 30px;
+  }
+  
+  h4 {
+	font-size: 26px;
+	font-weight: 400;
+  }
+  
+  h5 {
+	font-size: 15px;
+  }
+  
+  h6 {
+	font-size: 13px;
+	font-weight: bold;
+  }
+  
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+	position: fixed;
+	right: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	min-height: 50px;
+	line-height: 50px;
+	background: transparent;
+	z-index: 1030;
+  }
+  
+  /* Estilos para la barra de navegación - Elementos */
+  .navbar .active {
+	color: #f4d8b7 !important;
+  }
+  
+
+  
+  .navbar .nav-item {
+	margin: 0 5px;
+	padding: 0;
+  }
+  
+  .navbar .nav-item a {
+	color: #ffffff;
+	font-weight: 300;
+  }
+  
+  .navbar .nav-link {
+	position: relative;
+	padding: 0;
+  }
+  
+  .navbar .navbar-toggler {
+	cursor: pointer;
+  }
+  
+  .navbar .navbar-toggler span {
+	color: #fff;
+  }
+  
+  /* Estilos para el scroll de la barra de navegación */
+  .nav-scroll {
+	background: #fff;
+	-webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
+	box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+  }
+  
+  .nav-scroll .navbar-nav > li > a {
+	color: #333;
+  }
+  
+  .nav-scroll .navbar-brand img {
+	-webkit-transform: scale(1.03) !important;
+	transform: scale(1.03) !important;
+  }
+  
+  .nav-scroll .navbar-toggler {
+	cursor: pointer;
+  }
+  
+  .nav-scroll .navbar-toggler span {
+	color: #333;
+  }
+  
+  .nav-scroll .nav-link:hover:after {
+	background-color: #2388ed;
+  }
+  
+  .nav-scroll .active {
+	position: relative;
+  }
+  
+  /* Estilos para el banner */
+  .banner {
+	background: url(images/bg1.jpg) no-repeat 0% 0% / 100% 100%;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+  }
+  
+  .banner-overlay {
+	background: linear-gradient(to bottom, rgba(194, 16, 66, 0.82) 0%, #b97b2a 100%);
+	padding: 220px 0px 170px;
+  }
+  
+  .banner h1 {
+	color: #ffffff;
+  }
+  
+  .banner p {
+	margin: 15px auto 15px;
+	max-width: 670px;
+  }
+  
+  .banner-btn {
+	background: #ab2f52;
+	padding: 12px 45px;
+	font-size: 15px;
+	border-radius: 30px;
+	margin-top: 30px;
+  }
+  
+  .banner-btn:hover {
+	background: #ffffff;
+	color: #c55776;
+  }
+  
+  /* Estilos para secciones */
+  .section-padding {
+	padding: 100px 0px;
+  }
+  
+  .section-title {
+	padding-bottom: 80px;
+  }
+  
+  .section-title h3 {
+	color: #ab2f52;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 22px;
+  }
+  
+  .section-title p {
+	width: 60%;
+	margin: 15px auto 20px;
+  }
+  
+  .section-title-line {
+	background: #ececec;
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: calc(50% - 87px);
+	width: 175px;
+  }
+  
+  .section-title-line:after {
+	background: #ab2f52;
+	bottom: -1px;
+	content: "";
+	height: 2px;
+	left: calc(50% - 22px);
+	position: absolute;
+	width: 45px;
+  }
+  
+  /* Estilos para márgenes */
+  .mb-30 {
+	margin-bottom: 30px !important;
+  }
+  
+  .mb-50 {
+	margin-bottom: 50px !important;
+  }
+  
+  .mb-100 {
+	margin-bottom: 100px !important;
+  }
+  
+  .mt-50 {
+	margin-top: 50px !important;
+  }
+  
+  .mt-100 {
+	margin-bottom: 100px !important;
+  }
+  
+  .pd-lt-10 {
+	padding-left: 10px;
+  }
+  
+  .no-padding {
+	padding: 0px !important;
+  }
+  
+  /* Estilos para subtítulos */
+ 
+  
+  .sub-title-paragraph h4 {
+	margin-bottom: 5px;
+  }
+  
+  .sub-title-paragraph h5 {
+	color: #ffaf53;
+  }
+  
+  .sub-title-paragraph p {
+	padding-top: 20px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 25px;
+  }
+  
+  /* Estilos para botones de anclaje */
+  .anchor-btn {
+	background: #ffaf53;
+	padding: 10px 20px;
+	color: #ffffff !important;
+	border-radius: 3px;
+	margin-top: 30px;
+  }
+  
+  /* Estilos para fondos */
+  .bg-grey {
+	background-color: #fafafa;
+  }
+  
+  .bg-white {
+	background: #ffffff;
+  }
+ /* Ajustes para tamaños de pantalla más pequeños */
+@media screen and (max-width: 991px) {
+	.contacfoto a img {
+	  width: 40px; /* Tamaño ajustado de los íconos */
+	  height: 40px; /* Tamaño ajustado de los íconos */
+	}
+  }
+  
+  /* Ajustes para tamaños de pantalla aún más pequeños */
+  @media screen and (max-width: 768px) {
+	.contacfoto a img {
+	  width: 30px; /* Tamaño ajustado de los íconos */
+	  height: 30px; /* Tamaño ajustado de los íconos */
+	}
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media screen and (max-width: 480px) {
+	.contacfoto a img {
+	  width: 25px; /* Tamaño ajustado de los íconos */
+	  height: 25px; /* Tamaño ajustado de los íconos */
+	}
+  }
+
+
+
+/* Estilos para la imagen */
+.section-img img {
+	max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+	height: auto; /* Mantener la proporción de la imagen */
+	display: block; /* Eliminar espacios debajo de la imagen */
+	margin: 0 auto; /* Centrar la imagen horizontalmente */
+  }
+
+  
+  
+  /* Estilos para el footer *//* Estilos para el footer */
+.footer-copy {
+	background-color: #f2f2f2;
+	padding: 10px 0;
+	text-align: center; /* Centra el contenido */
+  }
+  
+  .footer-copy p {
+	color: #333;
+	font-size: 14px;
+  }
+  
+  .footer-copy strong {
+	font-weight: bold;
+  }
+
+/* Estilos para los íconos de contacto */
+.contacfoto {
+	margin-top: 20px; /* Ajusta el margen superior de los íconos */
+	display: flex; /* Usa flexbox para alinear los íconos */
+	justify-content: center; /* Centra horizontalmente los íconos */
+	align-items: center; /* Centra verticalmente los íconos */
+	width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  }
+  
+  .contacfoto a {
+	margin: 0 10px; /* Ajusta el margen horizontal entre los íconos */
+  }
+  
+  .contacfoto a img {
+	width: 50px; /* Tamaño ajustado de los íconos */
+	height: 50px; /* Tamaño ajustado de los íconos */
+  }
+  
+  /* Media Queries para diferentes tamaños de pantalla */
+  @media screen and (max-width: 991px) {
+	.contacfoto a img {
+	  width: 50px; /* Tamaño ajustado de los íconos */
+	  height: 50px; /* Tamaño ajustado de los íconos */
+	}
+  }
+  
+  @media screen and (max-width: 768px) {
+	.contacfoto a img {
+	  width: 50px; /* Tamaño ajustado de los íconos */
+	  height: 50px; /* Tamaño ajustado de los íconos */
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.contacfoto a img {
+	  width: 25px; /* Tamaño ajustado de los íconos */
+	  height: 25px; /* Tamaño ajustado de los íconos */
+	}
+  }
+  
+
+  .back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 99;
+	font-size: 24px;
+	color: #fff;
+	background-color: #ab2f52;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	transition: opacity 0.4s;
+  }
+  
+  .back-to-top:hover {
+	background-color: #ffaf53;
+  }
+  
+  .back-to-top i {
+	margin-top: 2px;
+  }
+  
+  /* Mostrar el botón solo cuando se haya desplazado hacia abajo */
+  @media screen and (min-width: 768px) {
+	.back-to-top {
+	  right: 20px;
+	  left: auto;
+	}
+  }
+  
+
+  #backToTopButton {
+	color: red; /* Cambia el color del texto del botón a rojo */
+  }
+  
+  #backToTopButton i {
+	color: green; /* Cambia el color del ícono a verde */
+  }
+  
+  #backToTopButton {
+	onclick: function() {
+	  // Haz algo cuando se hace clic en el botón
+	}
+  
+
+	.fixed-bottom-right {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	  }
